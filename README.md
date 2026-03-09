@@ -51,7 +51,7 @@ No build step needed. Static HTML site deploys instantly.
 ## 📬 Contact Info Used
 
 - **Email:** waseem_raza3@yahoo.com
-- **Phone:** +92 333 629 9608
+- **Phone:** +92 333 629 9318
 - **Fiverr:** fiverr.com/mixed_artist
 - **LinkedIn:** linkedin.com/in/wasimbrw
 - **GitHub:** github.com/wasimbrw
@@ -59,3 +59,4 @@ No build step needed. Static HTML site deploys instantly.
 ---
 
 Made with vibes 💜
+
