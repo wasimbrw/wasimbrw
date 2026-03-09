@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Wasim — Vibe Coder</title>
+  <meta name="description"
+    content="Muhammad Wasim | Vibe Coder from Pakistan. Browser extensions, WordPress plugins, desktop apps & more. Your vibes are my codes." />
+  <meta property="og:title" content="Muhammad Wasim — Vibe Coder" />
+  <meta property="og:description"
+    content="Your vibes are my codes. Custom browser extensions, WordPress plugins, desktop apps, and automation tools." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>wasim<span class="logo-slash">/</span><span
+          class="logo-bracket">&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="https://www.fiverr.com/mixed_artist" target="_blank" class="btn btn-sm">Hire Me</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <canvas id="particleCanvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>Open to Work
+      </div>
+      <h1 class="hero-title">
+        Your vibes are<br />
+        <span class="gradient-text">my codes.</span>
+      </h1>
+      <p class="hero-sub">
+        I'm <strong>Muhammad Wasim</strong> — a Vibe Coder from Pakistan.<br />
+        I build browser extensions, WordPress plugins, desktop apps &amp; automation tools that just <em>work</em>.
+      </p>
+      <div class="hero-cta">
+        <a href="#services" class="btn btn-primary">Explore Services</a>
+        <a href="https://www.fiverr.com/mixed_artist" target="_blank" class="btn btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="22" height="22" rx="5" fill="#1DBF73" /><text x="12" y="17"
+              font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="white"
+              text-anchor="middle">Fi</text>
+          </svg>
+          View on Fiverr
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">4+</span>
+          <span class="stat-label">Years Freelancing</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Years in IT</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Vibes Delivered</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-avatar-wrap">
+      <div class="avatar-ring"></div>
+      <div class="avatar-glow"></div>
+      <img src="avatar.png" alt="Muhammad Wasim" class="hero-avatar" id="heroAvatar" />
+    </div>
+    <a href="#services" class="scroll-hint" aria-label="Scroll down">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7" />
+      </svg>
+    </a>
+  </section>
+
+  <!-- ══ SERVICES ══ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Build</span>
+        <h2 class="section-title">Services</h2>
+        <p class="section-desc">From idea to deployment — I code what you vibe.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card" data-index="0">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="14" rx="2" />
+              <path d="M3 7h18M7 3v4M9 12l2 2 4-4" />
+            </svg>
+          </div>
+          <h3>Browser Extensions</h3>
+          <p>Custom Chrome & Firefox extensions for productivity, automation, scraping, ad injection, UI enhancers — you
+            name it, I build it.</p>
+          <ul class="service-tags">
+            <li>Chrome</li>
+            <li>Firefox</li>
+            <li>Manifest V3</li>
+            <li>JS/HTML</li>
+          </ul>
+        </div>
+
+        <div class="service-card featured" data-index="1">
+          <div class="featured-label">Popular</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <h3>WordPress Plugins</h3>
+          <p>Tailor-made WP plugins that integrate seamlessly with your theme — from WooCommerce add-ons to custom post
+            types and dashboards.</p>
+          <ul class="service-tags">
+            <li>PHP</li>
+            <li>WooCommerce</li>
+            <li>REST API</li>
+            <li>Gutenberg</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-index="2">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M8 4v16M2 12h6" />
+              <circle cx="16" cy="12" r="3" />
+            </svg>
+          </div>
+          <h3>Desktop Applications</h3>
+          <p>Cross-platform Windows/Mac desktop apps using Electron or Python — automation, data tools, password
+            managers, AI-powered utilities.</p>
+          <ul class="service-tags">
+            <li>Electron</li>
+            <li>Python</li>
+            <li>Tkinter</li>
+            <li>Windows</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-index="3">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+          </div>
+          <h3>Web Apps & Tools</h3>
+          <p>Fast, modern web apps deployed on Vercel or GitHub Pages — landing pages, SaaS dashboards, OSINT tools, and
+            automation portals.</p>
+          <ul class="service-tags">
+            <li>Vite</li>
+            <li>Next.js</li>
+            <li>Vercel</li>
+            <li>Firebase</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-index="4">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <h3>Automation & Scripts</h3>
+          <p>Bots, scrapers, schedulers, and workflow automations. I wire up APIs, automate repetitive tasks, and save
+            you hours every week.</p>
+          <ul class="service-tags">
+            <li>Python</li>
+            <li>Node.js</li>
+            <li>APIs</li>
+            <li>Puppeteer</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-index="5">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 8v4l3 3" />
+            </svg>
+          </div>
+          <h3>IT Support & Training</h3>
+          <p>10+ years in IT: network setup, troubleshooting, hardware, and technical training. Fast, reliable, remote
+            or on-site.</p>
+          <ul class="service-tags">
+            <li>Networking</li>
+            <li>Hardware</li>
+            <li>Training</li>
+            <li>Support</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <section class="section section-alt" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <span class="section-tag">The Human Behind the Code</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="about-bio">
+            I'm <strong>Muhammad Wasim</strong>, a versatile IT professional based in <strong>Burewala,
+              Pakistan</strong>.
+            I started my journey as an IT instructor back in 2010, teaching networking and cybersecurity.
+            Since then, I've moved through IT support roles, network administration, and in 2022 I went full freelance —
+            coding whatever clients vibe with.
+          </p>
+          <p class="about-bio">
+            My headline says it all: <em>"Your vibes are my codes."</em> I listen, I understand, and I build solutions
+            that match exactly what you're feeling — not just what you're saying.
+          </p>
+          <div class="about-links">
+            <a href="https://linkedin.com/in/wasimbrw" target="_blank" class="about-link">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              LinkedIn
+            </a>
+            <a href="https://www.fiverr.com/mixed_artist" target="_blank" class="about-link">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="22" height="22" rx="5" fill="#1DBF73" /><text x="12" y="17"
+                  font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="white"
+                  text-anchor="middle">Fi</text>
+              </svg>
+              Fiverr
+            </a>
+            <a href="https://github.com/wasimbrw" target="_blank" class="about-link">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-date">2022 – Present</span>
+                <h4>Professional Freelancer</h4>
+                <p>Fiverr — Browser extensions, WordPress plugins, web tools</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-date">2021 – 2023</span>
+                <h4>IT Assistant</h4>
+                <p>Ascent Group of Colleges — Network, CCTV, software support</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-date">2017 – 2021</span>
+                <h4>IT Assistant</h4>
+                <p>Aspire Group of Colleges — IT infrastructure & support</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-date">2010 – 2013</span>
+                <h4>IT Instructor</h4>
+                <p>IT Skills Developer — Networking, cybersecurity, hardware</p>
+              </div>
+            </div>
+          </div>
+          <div class="skills-wrap">
+            <div class="skill-pill">JavaScript</div>
+            <div class="skill-pill">PHP / WordPress</div>
+            <div class="skill-pill">Python</div>
+            <div class="skill-pill">Electron</div>
+            <div class="skill-pill">Chrome Extensions</div>
+            <div class="skill-pill">Node.js</div>
+            <div class="skill-pill">Networking</div>
+            <div class="skill-pill">Automation</div>
+            <div class="skill-pill">Firebase</div>
+            <div class="skill-pill">Vercel</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROJECTS ══ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Recent Work</h2>
+        <p class="section-desc">A taste of what I've shipped. More available on request.</p>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header p-ext">
+            <div class="project-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28">
+                <rect x="3" y="3" width="18" height="14" rx="2" />
+                <path d="M3 7h18M9 12l2 2 4-4" />
+              </svg>
+            </div>
+            <div class="project-type">Chrome Extension</div>
+          </div>
+          <h3>Password Manager Pro</h3>
+          <p>Secure browser extension with encrypted vault, autofill, PIN protection, OTP recovery & Firebase sync.</p>
+          <div class="project-stack">
+            <span>JavaScript</span><span>Firebase</span><span>Manifest V3</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header p-ai">
+            <div class="project-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8v4l3 3" />
+              </svg>
+            </div>
+            <div class="project-type">AI Extension</div>
+          </div>
+          <h3>EyeHear AI</h3>
+          <p>Chrome extension that reads selected text aloud using AI, with multi-language support and real-time
+            translation.</p>
+          <div class="project-stack">
+            <span>Chrome API</span><span>Web Speech</span><span>AI APIs</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header p-classnotes">
+            <div class="project-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28">
+                <path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" />
+              </svg>
+            </div>
+            <div class="project-type">AI Desktop App</div>
+          </div>
+          <h3>ClassNotes AI</h3>
+          <p>Transcribes any online class — Zoom, MS Teams, Google Meet — even when the host has disabled recording or
+            transcription. Never miss a note again.</p>
+          <div class="project-stack">
+            <span>Python</span><span>Speech AI</span><span>Zoom/Teams/Meet</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header p-wp">
+            <div class="project-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <div class="project-type">Web App</div>
+          </div>
+          <h3>Developer Portfolio Sites</h3>
+          <p>Custom portfolio web apps & landing pages with Vite/Next.js — deployed on Vercel with CI/CD from GitHub.
+          </p>
+          <div class="project-stack">
+            <span>Vite</span><span>Vercel</span><span>GitHub</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="projects-cta">
+        <a href="https://www.fiverr.com/mixed_artist" target="_blank" class="btn btn-ghost">See More on Fiverr →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ REVIEWS ══ -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">Customer Reviews</h2>
+        <p class="section-desc">Don't just take my word for it. Here is what people are saying.</p>
+      </div>
+      <div class="reviews-grid">
+
+        <div class="review-card">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+          <p class="review-text">"Wasim built a custom Chrome extension for my team that saved us 10+ hours a week. His
+            communication is top-notch and he really understood the 'vibe' of what we were trying to achieve. Highly
+            recommended!"</p>
+          <div class="review-author">
+            <div class="author-avatar">J</div>
+            <div class="author-info">
+              <h4>James T.</h4>
+              <span>Agency Owner</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+          <p class="review-text">"I needed a complex WordPress plugin integrated with my WooCommerce store. Wasim not
+            only delivered it ahead of schedule, but the code quality was fantastic. He's my go-to developer now."</p>
+          <div class="review-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #ec4899, #f43f5e);">S</div>
+            <div class="author-info">
+              <h4>Sarah L.</h4>
+              <span>E-commerce Manager</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+          <p class="review-text">"Outstanding work on our desktop automation tool. We had a fuzzy idea of what we
+            wanted, and he turned it into a sleek, functional Python app that runs flawlessly on Windows. Will hire
+            again."</p>
+          <div class="review-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #22d3ee, #0ea5e9);">M</div>
+            <div class="author-info">
+              <h4>Michael R.</h4>
+              <span>Operations Director</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="reviews-cta" style="text-align: center; margin-top: 40px;">
+        <button class="btn btn-primary" id="openReviewBtn">
+          <span>Leave a Review</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+            </path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Build</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-desc">Have a vibe? Let's turn it into code.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-left">
+          <p class="contact-body">Whether you need a browser extension, a WordPress plugin, a desktop app, or something
+            entirely custom — I'm one message away. Fast response. Real communication. Quality delivery.</p>
+          <div class="contact-chips">
+            <a href="mailto:waseem_raza3@yahoo.com" class="contact-chip" id="emailChip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,12 2,6" />
+              </svg>
+              waseem_raza3@yahoo.com
+            </a>
+            <a href="tel:+923336299318" class="contact-chip" id="phoneChip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+              </svg>
+              +92 333 629 9318
+            </a>
+          </div>
+          <div class="social-row">
+            <a href="https://linkedin.com/in/wasimbrw" target="_blank" class="social-btn" id="linkedinBtn"
+              aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a href="https://www.fiverr.com/mixed_artist" target="_blank" class="social-btn" id="fiverrBtn"
+              aria-label="Fiverr">
+              <svg viewBox="0 0 24 24" fill="none" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="22" height="22" rx="5" fill="#1DBF73" /><text x="12" y="17"
+                  font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="white"
+                  text-anchor="middle">Fi</text>
+              </svg>
+            </a>
+            <a href="https://github.com/wasimbrw" target="_blank" class="social-btn" id="githubBtn" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="service">Service</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option>Browser Extension</option>
+                <option>WordPress Plugin</option>
+                <option>Desktop Application</option>
+                <option>Web App / Tool</option>
+                <option>Automation / Script</option>
+                <option>IT Support</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell me your vibe..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>wasim<span class="logo-slash">/</span><span
+            class="logo-bracket">&gt;</span>
+        </a>
+        <p class="footer-copy">© 2025 Muhammad Wasim · Vibe Coder · Burewala, Pakistan</p>
+        <p class="footer-made">Made with vibes &amp; deployed on <a href="https://vercel.com" target="_blank">Vercel</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══ REVIEW MODAL ══ -->
+  <div class="modal-overlay" id="reviewModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeReviewBtn" aria-label="Close modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-header">
+        <h3>Write a Review</h3>
+        <p>Share your experience working with me. Your feedback means everything!</p>
+      </div>
+      <form class="contact-form" id="reviewForm" onsubmit="handleReviewSubmit(event)">
+        <div class="form-group">
+          <label for="revName">Name</label>
+          <input type="text" id="revName" required placeholder="John Doe">
+        </div>
+        <div class="form-group">
+          <label for="revRole">Role / Company</label>
+          <input type="text" id="revRole" required placeholder="CEO at Acorn Inc.">
+        </div>
+        <div class="form-group">
+          <label>Rating</label>
+          <div class="star-rating" id="starRating">
+            <span data-value="1">★</span>
+            <span data-value="2">★</span>
+            <span data-value="3">★</span>
+            <span data-value="4">★</span>
+            <span data-value="5">★</span>
+          </div>
+          <input type="hidden" id="revRating" required value="5">
+        </div>
+        <div class="form-group">
+          <label for="revMessage">Your Review</label>
+          <textarea id="revMessage" required rows="4" placeholder="How was your vibe?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" id="submitReviewBtn">
+          <span>Submit Review</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
